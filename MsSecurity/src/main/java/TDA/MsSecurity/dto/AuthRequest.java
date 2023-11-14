@@ -4,33 +4,32 @@ import java.io.Serializable;
  
 public class AuthRequest implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-    private String usuario;
-    private String clave;
+    private String username;
+    private String password;
  
     public AuthRequest() {
  
     }
  
     public AuthRequest(String usuario, String clave) {
-        this.setUsuario(usuario);
-        this.setClave(clave);
+        this.setUsername(usuario);
+        this.setPassword(clave);
     }
  
-    public String getClave() {
-        return clave;
+    public String getPassword() {
+        return password;
     }
  
-    public void setClave(String clave) {
-        this.clave = clave;
+    public void setPassword(String clave) {
+        this.password = clave;
     }
  
-    public String getUsuario() {
-        return usuario;
+    public String getUsername() {
+        return username;
     }
  
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUsername(String usuario) {
+        this.username = usuario;
     }
 }
 
