@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name="usuario")
-public class modelUsuario {
+public class UsuarioModel {
     
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,7 +17,7 @@ public class modelUsuario {
     public int idUsuario;
 
     @Column(name="username")
-    public String userName;
+    public String username;
 
     @Column(name="password")
     public String password;
@@ -30,12 +30,12 @@ public class modelUsuario {
         this.idUsuario = idUsuario;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String userName) {
+        this.username = userName;
     }
 
     public String getPassword() {
